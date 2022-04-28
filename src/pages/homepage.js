@@ -1,12 +1,13 @@
+import { Container } from '@mui/material';
 import React from 'react';
 
 import HomepageTabs from '../components/HomepageTabs';
 
 const Homepage = () => {
   return (
-    <div>
+    <Container>
       <HomepageTabs />
-    </div>
+    </Container>
   );
 };
 

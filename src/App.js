@@ -4,8 +4,10 @@ import { ThemeProvider } from '@mui/material';
 
 import theme from './theme';
 import Navbar from './layout/Navbar';
-import Homepage from './pages/homepage';
 import Footer from './layout/Footer';
+
+import Homepage from './pages/homepage';
+import Blogpage from './pages/blogpage';
 
 const App = () => {
   return (
@@ -13,6 +15,7 @@ const App = () => {
       <Navbar />
       <Routes>
         <Route path='/' element={<Homepage />} />
+        <Route path='/articles/:slug' element={<Blogpage />} />
       </Routes>
       <Footer />
     </ThemeProvider>
