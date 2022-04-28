@@ -1,14 +1,18 @@
-import { Container } from '@mui/material';
 import React from 'react';
+import HeroArticles from '../components/HeroArticles';
+import BlogArticles from '../components/BlogArticles';
+import Newsletter from '../components/Newsletter';
+import CTA from '../components/CTA';
 
-import HomepageTabs from '../components/HomepageTabs';
-
-const Homepage = () => {
+const homepage = () => {
   return (
-    <Container>
-      <HomepageTabs />
-    </Container>
+    <div>
+      <HeroArticles />
+      <BlogArticles />
+      <Newsletter />
+      <CTA />
+    </div>
   );
 };
 
-export default Homepage;
+export default homepage;
