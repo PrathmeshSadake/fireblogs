@@ -9,8 +9,8 @@ const homepage = () => {
     <div>
       <HeroArticles />
       <BlogArticles />
-      <Newsletter />
       <CTA />
+      <Newsletter />
     </div>
   );
 };

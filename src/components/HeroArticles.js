@@ -6,11 +6,12 @@ const HeroArticles = () => {
       <div className='2xl:mx-auto 2xl:container lg:px-20 lg:py-16 md:py-12 md:px-6 py-9 px-4 w-96 sm:w-auto'>
         <div className='flex flex-col items-center justify-center'>
           <h1 className='text-4xl font-semibold leading-9 text-center text-gray-800'>
-            This Week Blogs
+            This Week Blogs | Stay curious.
           </h1>
           <p className='text-base leading-normal text-center text-gray-600 mt-4 lg:w-1/2 md:w-10/12 w-11/12'>
-            If you're looking for random paragraphs, you've come to the right
-            place. When a random word or a random sentence isn't quite enough
+            Explore the most popular blogs from the Fireblogs community. A
+            constantly updating list of popular categories and the best minds
+            around the world.
           </p>
         </div>
         <div className='lg:flex items-stretch md:mt-12 mt-8'>

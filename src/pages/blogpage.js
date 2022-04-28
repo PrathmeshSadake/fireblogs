@@ -1,94 +1,100 @@
-import React from "react";
+import React from 'react';
 
-const Blog4 = () => {
-    return (
-        <div className="2xl:mx-auto 2xl:container 2xl:px-20 xl:px-12 sm:px-6 px-4 py-16">
-            <h1 className="lg:text-4xl text-3xl font-semibold leading-9 text-gray-800">Join Our Blog Community</h1>
-            <p className="md:w-1/2 text-base leading-normal mt-4 sm:pr-10 text-gray-600">If you're looking for random paragraphs, you've come to the right place.</p>
-            <div className="md:flex items-start justify-between mt-12">
-                <div className="md:w-1/2 lg:w-full">
-                    <div>
-                        <div className="relative">
-                            <img src="https://i.ibb.co/HxkBZQM/img-1.png" alt="stairs" />
-                            <div className="bg-white absolute top-0 left-0">
-                                <p className="text-base leading-4 py-3 px-5 text-gray-800">News</p>
-                            </div>
-                        </div>
-                        <p className="text-base font-light leading-4 text-gray-800 mt-6">Michael Jackson</p>
-                        <h1 className="text-2xl font-semibold leading-7 sm:pr-20 mt-2 text-gray-800">Moving up the corporate ladder?</h1>
-                        <p className="text-base leading-normal mt-4 sm:pr-20 md:pr-10 text-gray-600">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution</p>
-                        <button className="flex items-center justify-between w-72 mt-6 bg-gray-800 p-4 hover:bg-gray-700 focus:ring-2 focus:ring-offset-2 focus:ring-gray-700">
-                            <p className="text-base font-medium leading-4 text-white">Read more</p>
-                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M3.33203 8H12.6654" stroke="white" strokeLinecap="round" strokeLinejoin="round" />
-                                <path d="M10 10.6667L12.6667 8" stroke="white" strokeLinecap="round" strokeLinejoin="round" />
-                                <path d="M10 5.33344L12.6667 8.0001" stroke="white" strokeLinecap="round" strokeLinejoin="round" />
-                            </svg>
-                        </button>
-                    </div>
-                    <div className="mt-9">
-                        <div className="relative">
-                            <img src="https://i.ibb.co/8mP5tmS/img-2.png" alt="flower pot" />
-                            <div className="bg-white absolute top-0 left-0">
-                                <p className="text-base leading-4 py-3 px-5 text-gray-800">News</p>
-                            </div>
-                        </div>
-                        <p className="text-base font-light leading-4 text-gray-800 mt-6">Michael Jackson</p>
-                        <h1 className="text-2xl font-semibold leading-7 sm:pr-20 mt-2 text-gray-800">Expert advice on wood works</h1>
-                        <p className="text-base leading-normal mt-4 sm:pr-20 md:pr-10 text-gray-600">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution</p>
-                        <button className="flex items-center justify-between w-72 mt-6 bg-gray-800 p-4 hover:bg-gray-700 focus:ring-2 focus:ring-offset-2 focus:ring-gray-700">
-                            <p className="text-base font-medium leading-4 text-white">Read more</p>
-                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M3.33203 8H12.6654" stroke="white" strokeLinecap="round" strokeLinejoin="round" />
-                                <path d="M10 10.6667L12.6667 8" stroke="white" strokeLinecap="round" strokeLinejoin="round" />
-                                <path d="M10 5.33344L12.6667 8.0001" stroke="white" strokeLinecap="round" strokeLinejoin="round" />
-                            </svg>
-                        </button>
-                    </div>
-                </div>
-                <div className="md:w-1/2 md:ml-6 md:mt-0 mt-9 lg:w-full">
-                    <div>
-                        <div className="relative">
-                            <img src="https://i.ibb.co/DKg5zHT/img-3.png" alt="stairs" />
-                            <div className="bg-white absolute top-0 left-0">
-                                <p className="text-base leading-4 py-3 px-5 text-gray-800">News</p>
-                            </div>
-                        </div>
-                        <p className="text-base font-light leading-4 text-gray-800 mt-6">James McFerson</p>
-                        <h1 className="text-2xl font-semibold leading-7 sm:pr-20 mt-2 text-gray-800">How a serene environment affects productivity</h1>
-                        <p className="text-base leading-normal mt-4 sm:pr-20 md:pr-10 text-gray-600">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution</p>
-                        <button className="flex items-center justify-between w-72 mt-6 bg-gray-800 p-4 hover:bg-gray-700 focus:ring-2 focus:ring-offset-2 focus:ring-gray-700">
-                            <p className="text-base font-medium leading-4 text-white">Read more</p>
-                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M3.33203 8H12.6654" stroke="white" strokeLinecap="round" strokeLinejoin="round" />
-                                <path d="M10 10.6667L12.6667 8" stroke="white" strokeLinecap="round" strokeLinejoin="round" />
-                                <path d="M10 5.33344L12.6667 8.0001" stroke="white" strokeLinecap="round" strokeLinejoin="round" />
-                            </svg>
-                        </button>
-                    </div>
-                    <div className="mt-9">
-                        <div className="relative">
-                            <img src="https://i.ibb.co/dPBXFwY/img-4.png" alt="stairs" />
-                            <div className="bg-white absolute top-0 left-0">
-                                <p className="text-base leading-4 py-3 px-5 text-gray-800">News</p>
-                            </div>
-                        </div>
-                        <p className="text-base font-light leading-4 text-gray-800 mt-6">James McFerson</p>
-                        <h1 className="text-2xl font-semibold leading-7 sm:pr-20 mt-2 text-gray-800">How to grow as a team through a balance of collaboration and individualism</h1>
-                        <p className="text-base leading-normal mt-4 sm:pr-20 md:pr-10 text-gray-600">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution</p>
-                        <button className="flex items-center justify-between w-72 mt-6 bg-gray-800 p-4 hover:bg-gray-700 focus:ring-2 focus:ring-offset-2 focus:ring-gray-700">
-                            <p className="text-base font-medium leading-4 text-white">Read more</p>
-                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M3.33203 8H12.6654" stroke="white" strokeLinecap="round" strokeLinejoin="round" />
-                                <path d="M10 10.6667L12.6667 8" stroke="white" strokeLinecap="round" strokeLinejoin="round" />
-                                <path d="M10 5.33344L12.6667 8.0001" stroke="white" strokeLinecap="round" strokeLinejoin="round" />
-                            </svg>
-                        </button>
-                    </div>
-                </div>
+const BlogPage = () => {
+  return (
+    <div className='2xl:mx-auto 2xl:container 2xl:px-20 xl:px-12 sm:px-6 px-4 py-16'>
+      <div class='grid grid-cols-6 gap-8 my-5'>
+        <div class='col-span-4'>
+          <h1 className='lg:text-4xl text-3xl font-semibold leading-9 text-gray-800'>
+            Moving up the corporate ladder?
+          </h1>
+          <p className='md:w-1/2 text-base leading-normal mt-4 sm:pr-10 text-gray-600'>
+            Michael Jordan | 27 April 2022 | 5mins read
+          </p>
+          <div className='relative mt-5'>
+            <img
+              src='https://i.ibb.co/HxkBZQM/img-1.png'
+              alt='stairs'
+              width={'100%'}
+            />
+            <div className='bg-white absolute top-0 left-0'>
+              <p className='text-base leading-4 py-3 px-5 text-gray-800'>
+                News
+              </p>
             </div>
+          </div>
+
+          <p className='text-base leading-normal mt-4 sm:pr-20 md:pr-10 text-gray-600'>
+            It is a long established fact that a reader will be distracted by
+            the readable content of a page when looking at its layout. The point
+            of using Lorem Ipsum is that it has a more-or-less normal
+            distribution
+          </p>
+          <p className='text-base leading-normal mt-4 sm:pr-20 md:pr-10 text-gray-600'>
+            It is a long established fact that a reader will be distracted by
+            the readable content of a page when looking at its layout. The point
+            of using Lorem Ipsum is that it has a more-or-less normal
+            distribution It is a long established fact that a reader will be
+            distracted by the readable content of a page when looking at its
+            layout. The point of using Lorem Ipsum is that it has a more-or-less
+            normal distribution It is a long established fact that a reader will
+            be distracted by the readable content of a page when looking at its
+            layout. The point of using Lorem Ipsum is that it has a more-or-less
+            normal distribution
+          </p>
+          <p className='text-base leading-normal mt-4 sm:pr-20 md:pr-10 text-gray-600'>
+            It is a long established fact that a reader will be distracted by
+            the readable content of a page when looking at its layout. The point
+            of using Lorem Ipsum is that it has a more-or-less normal
+            distribution It is a long established fact that a reader will be
+            distracted by the readable content of a page when looking at its
+            layout. The point of using Lorem Ipsum is that it has a more-or-less
+            normal distribution
+          </p>
         </div>
-    );
+        <div className='col-span-2'>
+          <h6 className='lg:text-2xl text-xl font-semibold text-gray-800'>
+            Discover more what matters to you
+          </h6>
+
+          <div class='flex flex-wrap'>
+            {[
+              'Technology',
+              'Science',
+              'Fashion',
+              'Personal',
+              'Lifestyle',
+              'Travel',
+              'Food',
+            ].map((category) => (
+              <button class='m-1 bg-white transition duration-150 ease-in-out rounded text-gray-800 border border-gray-300 px-6 py-2 text-xs hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-offset-2  focus:ring-gray-800'>
+                {category}
+              </button>
+            ))}
+          </div>
+
+          {[1, 2, 3].map((e) => (
+            <div class='mt-4'>
+              <img
+                src='https://i.ibb.co/d6jQJyY/blog-2-desktop.png'
+                alt='flying letters'
+                className='w-full'
+              />
+              <div className='mt-4'>
+                <h1 className='text-2xl font-semibold leading-6 mt-4 text-gray-800'>
+                  Internet of things
+                </h1>
+                <p className='text-base leading-6 text-gray-600 mt-2'>
+                  The emerge of internet of Things has brought in a need for
+                  low-cost security technology.
+                </p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
 };
 
-export default Blog4;
+export default BlogPage;
