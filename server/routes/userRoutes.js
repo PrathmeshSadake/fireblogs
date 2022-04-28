@@ -1,7 +1,9 @@
 const express = require('express');
+const bcrypt = require('bcryptjs');
 const router = express.Router();
 
 const UserModel = require('../models/user');
+const generateToken = require('../middlewares/token');
 
 // router.get('/', async (req, res) => {
 //   try {
@@ -17,30 +19,39 @@ const UserModel = require('../models/user');
 //     });
 //   }
 // });
-router.get('/:id', async (req, res) => {
-  try {
-    const user = await UserModel.findById(req.params.id);
-    if (!user) {
-      return res.status(404).json({
-        message: 'User not found!',
-      });
-    }
-    res.status(200).json({
-      user,
-    });
-  } catch (error) {
-    res.status(500).json({
-      status: 500,
-      error: error.message,
-    });
-  }
-});
+// router.get('/:id', async (req, res) => {
+//   try {
+//     const user = await UserModel.findById(req.params.id);
+//     if (!user) {
+//       return res.status(404).json({
+//         message: 'User not found!',
+//       });
+//     }
+//     res.status(200).json({
+//       user,
+//     });
+//   } catch (error) {
+//     res.status(500).json({
+//       status: 500,
+//       error: error.message,
+//     });
+//   }
+// });
 
 router.post('/', async (req, res) => {
   try {
-    const user = await UserModel.create(req.body);
-    res.status(200).json({
-      user,
+    const { name, email, password } = req.body;
+    const saltRounds = 10;
+    bcrypt.genSalt(saltRounds, function (err, salt) {
+      bcrypt.hash(password, salt, async (err, hash) => {
+        const user = await UserModel.create({ name, email, password: hash });
+        const token = generateToken(user._id);
+        res.status(200).json({
+          name: user.name,
+          email: user.email,
+          token,
+        });
+      });
     });
   } catch (error) {
     res.status(500).json({
