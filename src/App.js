@@ -8,8 +8,13 @@ import Footer from './layout/Footer';
 
 import Homepage from './pages/homepage';
 import Blogpage from './pages/blogpage';
+import SignInPage from './pages/signin-page';
 import ArticlesPage from './pages/articlespage';
+import ContactUsPage from './pages/contact-us-page';
 import CategoryBlogsPage from './pages/category-blogs-page';
+import UserProfilePage from './pages/user-profile-page';
+import Error404 from './pages/404-error';
+import BookmarksPage from './pages/bookmarks-page';
 
 const App = () => {
   return (
@@ -18,8 +23,13 @@ const App = () => {
       <Routes>
         <Route path='/' element={<Homepage />} />
         <Route path='/categories' element={<CategoryBlogsPage />} />
+        <Route path='/account/signin' element={<SignInPage />} />
+        <Route path='/contact-us' element={<ContactUsPage />} />
         <Route path='/articles' element={<ArticlesPage />} />
         <Route path='/articles/:slug' element={<Blogpage />} />
+        <Route path='/articles/saved-articles' element={<BookmarksPage />} />
+        <Route path='/account/me' element={<UserProfilePage />} />
+        <Route path='*' element={<Error404 />} />
       </Routes>
       <Footer />
     </ThemeProvider>
