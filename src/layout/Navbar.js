@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 export default function Navbar() {
   const [showMenu, setShowMenu] = useState(false);
@@ -50,79 +51,78 @@ export default function Navbar() {
           <div className='hidden lg:block'>
             <ul className='flex items-center space-x-10'>
               <li>
-                <a
-                  href='javascript:void(0)'
+                <Link
+                  to='/'
                   className=' dark:hover:text-gray-300 text-base text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline'
                 >
-                  Home
-                </a>
+                  Trending
+                </Link>
               </li>
               <li>
-                <a
-                  href='javascript:void(0)'
+                <Link
+                  to='/categories'
                   className=' dark:hover:text-gray-300 text-base text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline'
                 >
-                  Catalog
-                </a>
+                  Categories
+                </Link>
               </li>
               <li>
-                <a
-                  href='javascript:void(0)'
+                <Link
+                  to='/'
                   className=' dark:hover:text-gray-300 text-base text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline'
                 >
-                  Pages
-                </a>
+                  Featured
+                </Link>
               </li>
+
               <li>
-                <a
-                  href='javascript:void(0)'
-                  className=' dark:hover:text-gray-300 text-base text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline'
-                >
-                  Blog
-                </a>
-              </li>
-              <li>
-                <a
-                  href='javascript:void(0)'
+                <Link
+                  to='/contact-us'
                   className=' dark:hover:text-gray-300 text-base text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline'
                 >
                   Contact us
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
         </div>
         <div className='lg:w-3/12 flex justify-end items-center space-x-4'>
           {/* bookmark icon */}
-          <svg
-            xmlns='http://www.w3.org/2000/svg'
-            class='h-6 w-6'
-            fill='none'
-            viewBox='0 0 24 24'
-            stroke='currentColor'
-            stroke-width='2'
-          >
-            <path
-              stroke-linecap='round'
-              stroke-linejoin='round'
-              d='M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z'
-            />
-          </svg>
+          <Link to='/articles/saved-articles'>
+            <svg
+              xmlns='http://www.w3.org/2000/svg'
+              class='h-6 w-6'
+              fill='none'
+              viewBox='0 0 24 24'
+              stroke='currentColor'
+              stroke-width='2'
+            >
+              <path
+                stroke-linecap='round'
+                stroke-linejoin='round'
+                d='M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z'
+              />
+            </svg>
+          </Link>
+
           {/* user icon */}
-          <svg
-            xmlns='http://www.w3.org/2000/svg'
-            class='h-6 w-6'
-            fill='none'
-            viewBox='0 0 24 24'
-            stroke='currentColor'
-            stroke-width='2'
-          >
-            <path
-              stroke-linecap='round'
-              stroke-linejoin='round'
-              d='M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z'
-            />
-          </svg>
+          <Link to='account/me'>
+            <svg
+              xmlns='http://www.w3.org/2000/svg'
+              class='h-6 w-6'
+              fill='none'
+              viewBox='0 0 24 24'
+              stroke='currentColor'
+              stroke-width='2'
+            >
+              <path
+                stroke-linecap='round'
+                stroke-linejoin='round'
+                d='M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z'
+              />
+            </svg>
+          </Link>
+
           <button
             onClick={() => setShowMenuSm(true)}
             aria-label='open menu'
@@ -201,12 +201,12 @@ export default function Navbar() {
             <div className='mt-8'>
               <ul className='flex flex-col space-y-8'>
                 <li className='flex items-center justify-between'>
-                  <a
-                    href='javascript:void(0)'
+                  <Link
+                    to='/'
                     className=' text-base text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline'
                   >
-                    Home
-                  </a>
+                    Trending
+                  </Link>
                   <button
                     className='fill-stroke text-black '
                     aria-label='show options'
@@ -229,12 +229,12 @@ export default function Navbar() {
                   </button>
                 </li>
                 <li className='flex items-center justify-between'>
-                  <a
-                    href='javascript:void(0)'
+                  <Link
+                    to='/categories'
                     className=' text-base text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline'
                   >
-                    Catalog
-                  </a>
+                    Categories
+                  </Link>
                   <button
                     className='fill-stroke text-black '
                     aria-label='show options'
@@ -257,12 +257,12 @@ export default function Navbar() {
                   </button>
                 </li>
                 <li className='flex items-center justify-between'>
-                  <a
-                    href='javascript:void(0)'
+                  <Link
+                    to='/'
                     className=' text-base text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline'
                   >
-                    Pages
-                  </a>
+                    Featured
+                  </Link>
                   <button
                     className='fill-stroke text-black '
                     aria-label='show options'
@@ -284,41 +284,14 @@ export default function Navbar() {
                     </svg>
                   </button>
                 </li>
+
                 <li className='flex items-center justify-between'>
-                  <a
-                    href='javascript:void(0)'
-                    className=' text-base text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline'
-                  >
-                    Blog
-                  </a>
-                  <button
-                    className='fill-stroke text-black '
-                    aria-label='show options'
-                  >
-                    <svg
-                      width={16}
-                      height={16}
-                      viewBox='0 0 16 16'
-                      fill='none'
-                      xmlns='http://www.w3.org/2000/svg'
-                    >
-                      <path
-                        d='M12 6L8 10L4 6'
-                        stroke='currentColor'
-                        strokeWidth='0.75'
-                        strokeLinecap='round'
-                        strokeLinejoin='round'
-                      />
-                    </svg>
-                  </button>
-                </li>
-                <li className='flex items-center justify-between'>
-                  <a
-                    href='javascript:void(0)'
+                  <Link
+                    to='/contact-us'
                     className=' text-base text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline'
                   >
                     Contact us
-                  </a>
+                  </Link>
                   <button
                     className='fill-stroke text-black '
                     aria-label='show options'
@@ -391,12 +364,12 @@ export default function Navbar() {
         <div className='mt-6 mx-4'>
           <ul className='flex flex-col space-y-8'>
             <li className='flex items-center justify-between'>
-              <a
-                href='javascript:void(0)'
+              <Link
+                to='/'
                 className='text-base text-gray-800 focus:outline-none  focus:ring-2 focus:ring-gray-800 hover:underline'
               >
-                Home
-              </a>
+                Trending
+              </Link>
               <button className='focus:outline-none focus:ring-2 text-black  focus:ring-gray-800 rounded hover:bg-gray-100 p-0.5'>
                 <svg
                   className='fill-stroke'
@@ -417,12 +390,12 @@ export default function Navbar() {
               </button>
             </li>
             <li className='flex items-center justify-between'>
-              <a
-                href='javascript:void(0)'
+              <Link
+                to='/categories'
                 className='text-base text-gray-800 focus:outline-none  focus:ring-2 focus:ring-gray-800 hover:underline'
               >
-                Catalog
-              </a>
+                Categories
+              </Link>
               <button className='focus:outline-none focus:ring-2 text-black  focus:ring-gray-800 rounded hover:bg-gray-100 p-0.5'>
                 <svg
                   className='fill-stroke'
@@ -443,12 +416,12 @@ export default function Navbar() {
               </button>
             </li>
             <li className='flex items-center justify-between'>
-              <a
-                href='javascript:void(0)'
+              <Link
+                to='/'
                 className='text-base text-gray-800 focus:outline-none  focus:ring-2 focus:ring-gray-800 hover:underline'
               >
-                Pages
-              </a>
+                Featured
+              </Link>
               <button className='focus:outline-none focus:ring-2 text-black  focus:ring-gray-800 rounded hover:bg-gray-100 p-0.5'>
                 <svg
                   className='fill-stroke'
@@ -469,38 +442,12 @@ export default function Navbar() {
               </button>
             </li>
             <li className='flex items-center justify-between'>
-              <a
-                href='javascript:void(0)'
-                className='text-base text-gray-800 focus:outline-none  focus:ring-2 focus:ring-gray-800 hover:underline'
-              >
-                Blog
-              </a>
-              <button className='focus:outline-none focus:ring-2 text-black  focus:ring-gray-800 rounded hover:bg-gray-100 p-0.5'>
-                <svg
-                  className='fill-stroke'
-                  width={16}
-                  height={16}
-                  viewBox='0 0 16 16'
-                  fill='none'
-                  xmlns='http://www.w3.org/2000/svg'
-                >
-                  <path
-                    d='M12 6L8 10L4 6'
-                    stroke='currentColor'
-                    strokeWidth='0.75'
-                    strokeLinecap='round'
-                    strokeLinejoin='round'
-                  />
-                </svg>
-              </button>
-            </li>
-            <li className='flex items-center justify-between'>
-              <a
-                href='javascript:void(0)'
+              <Link
+                to='/contact-us'
                 className='text-base text-gray-800 focus:outline-none  focus:ring-2 focus:ring-gray-800 hover:underline'
               >
                 Contact us
-              </a>
+              </Link>
               <button className='focus:outline-none focus:ring-2 text-black  focus:ring-gray-800 rounded hover:bg-gray-100 p-0.5'>
                 <svg
                   className='fill-stroke'
@@ -525,9 +472,9 @@ export default function Navbar() {
         <div className='w-full h-full flex items-end'>
           <ul className='bg-gray-50 dark:bg-gray-800 py-10 px-4 flex flex-col space-y-8 w-full'>
             <li>
-              <a
+              <Link
+                to=''
                 className='flex items-center space-x-2 focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline'
-                href='javascript:void(0)'
               >
                 <div>
                   <svg
@@ -561,12 +508,12 @@ export default function Navbar() {
                   </svg>
                 </div>
                 <p className='text-base text-gray-800'>Cart</p>
-              </a>
+              </Link>
             </li>
             <li>
-              <a
+              <Link
+                to='/articles/saved-articles'
                 className='flex items-center space-x-2 focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline'
-                href='javascript:void(0)'
               >
                 <div>
                   <svg
@@ -585,8 +532,8 @@ export default function Navbar() {
                     />
                   </svg>
                 </div>
-                <p className='text-base text-gray-800'>Wishlist</p>
-              </a>
+                <p className='text-base text-gray-800'>Bookmarks</p>
+              </Link>
             </li>
           </ul>
         </div>
