@@ -1,6 +1,17 @@
-import React from 'react';
+import axios from 'axios';
+import React, { useEffect, useState } from 'react';
 
 const HeroArticles = () => {
+  const [heroBlogPosts, setHeroBlogPosts] = useState([]);
+
+  useEffect(() => {
+    axios
+      .get(`${process.env.REACT_APP_SERVER_URL}/api/v1/blogs`)
+      .then((res) =>
+        setHeroBlogPosts(res.data.results.filter((post, idx) => idx < 6))
+      )
+      .catch((err) => console.error(err));
+  }, []);
   return (
     <div className='flex justify-center items-center'>
       <div className='2xl:mx-auto 2xl:container lg:px-20 lg:py-16 md:py-12 md:px-6 py-9 px-4 w-96 sm:w-auto'>

@@ -5,10 +5,10 @@ const FeaturedBlogsPage = () => {
   return (
     <div className='2xl:mx-auto 2xl:container lg:px-20 lg:py-16 md:py-12 md:px-6 py-9 px-4 w-96 sm:w-auto'>
       <div className='grid grid-cols-8 gap-3 my-5'>
-        <div className='col-span-6'>
+        <div className='col-span-8'>
           <FeaturedBlog />
         </div>
-        <div className='col-span-2'>
+        {/* <div className='col-span-2'>
           <h6 className='lg:text-2xl text-xl font-semibold text-gray-800'>
             Discover more what matters to you
           </h6>
@@ -28,7 +28,7 @@ const FeaturedBlogsPage = () => {
               </button>
             ))}
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );
