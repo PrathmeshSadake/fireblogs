@@ -19,6 +19,7 @@ import FeaturedBlogsPage from './pages/featured-blogs-page';
 import WriteBlogPage from './pages/write-blog-page';
 
 const App = () => {
+  // console.log(process.env.REACT_APP_SERVER_URL);
   return (
     <ThemeProvider theme={theme}>
       <Navbar />

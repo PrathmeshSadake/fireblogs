@@ -1,6 +1,7 @@
 import React from 'react';
 import FileBase64 from 'react-file-base64';
 import MDEditor from '@uiw/react-md-editor';
+import axios from 'axios';
 
 export default function App() {
   const [value, setValue] = React.useState('');
@@ -12,9 +13,20 @@ export default function App() {
     setFile(file);
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log({ title, description, image: file.base64, blogContent: value });
+    const blogArticle = {
+      title,
+      description,
+      imageURL: file.base64,
+      content: value,
+      createdBy: 'Prathmesh Sadake',
+    };
+    const res = await axios.post(
+      `${process.env.REACT_APP_SERVER_URL}/api/v1/blogs`,
+      blogArticle
+    );
+    console.log(res);
   };
 
   return (
