@@ -53,7 +53,7 @@ export default function Navbar() {
               <li>
                 <Link
                   to='/'
-                  className=' dark:hover:text-gray-300 text-base text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline'
+                  className=' dark:hover:text-gray-300 text-base text-gray-800'
                 >
                   Trending
                 </Link>
@@ -61,15 +61,15 @@ export default function Navbar() {
               <li>
                 <Link
                   to='/categories'
-                  className=' dark:hover:text-gray-300 text-base text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline'
+                  className=' dark:hover:text-gray-300 text-base text-gray-800'
                 >
                   Categories
                 </Link>
               </li>
               <li>
                 <Link
-                  to='/'
-                  className=' dark:hover:text-gray-300 text-base text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline'
+                  to='/articles/featured'
+                  className=' dark:hover:text-gray-300 text-base text-gray-800'
                 >
                   Featured
                 </Link>
@@ -78,7 +78,7 @@ export default function Navbar() {
               <li>
                 <Link
                   to='/contact-us'
-                  className=' dark:hover:text-gray-300 text-base text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline'
+                  className=' dark:hover:text-gray-300 text-base text-gray-800'
                 >
                   Contact us
                 </Link>
@@ -91,15 +91,15 @@ export default function Navbar() {
           <Link to='/articles/saved-articles'>
             <svg
               xmlns='http://www.w3.org/2000/svg'
-              class='h-6 w-6'
+              className='h-6 w-6'
               fill='none'
               viewBox='0 0 24 24'
               stroke='currentColor'
-              stroke-width='2'
+              strokeWidth='2'
             >
               <path
-                stroke-linecap='round'
-                stroke-linejoin='round'
+                strokeLinecap='round'
+                strokeLinejoin='round'
                 d='M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z'
               />
             </svg>
@@ -109,15 +109,15 @@ export default function Navbar() {
           <Link to='account/me'>
             <svg
               xmlns='http://www.w3.org/2000/svg'
-              class='h-6 w-6'
+              className='h-6 w-6'
               fill='none'
               viewBox='0 0 24 24'
               stroke='currentColor'
-              stroke-width='2'
+              strokeWidth='2'
             >
               <path
-                stroke-linecap='round'
-                stroke-linejoin='round'
+                strokeLinecap='round'
+                strokeLinejoin='round'
                 d='M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z'
               />
             </svg>
@@ -201,10 +201,7 @@ export default function Navbar() {
             <div className='mt-8'>
               <ul className='flex flex-col space-y-8'>
                 <li className='flex items-center justify-between'>
-                  <Link
-                    to='/'
-                    className=' text-base text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline'
-                  >
+                  <Link to='/' className=' text-base text-gray-800'>
                     Trending
                   </Link>
                   <button
@@ -229,10 +226,7 @@ export default function Navbar() {
                   </button>
                 </li>
                 <li className='flex items-center justify-between'>
-                  <Link
-                    to='/categories'
-                    className=' text-base text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline'
-                  >
+                  <Link to='/categories' className=' text-base text-gray-800'>
                     Categories
                   </Link>
                   <button
@@ -258,8 +252,8 @@ export default function Navbar() {
                 </li>
                 <li className='flex items-center justify-between'>
                   <Link
-                    to='/'
-                    className=' text-base text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline'
+                    to='/articles/featured'
+                    className=' text-base text-gray-800'
                   >
                     Featured
                   </Link>
@@ -286,10 +280,7 @@ export default function Navbar() {
                 </li>
 
                 <li className='flex items-center justify-between'>
-                  <Link
-                    to='/contact-us'
-                    className=' text-base text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline'
-                  >
+                  <Link to='/contact-us' className=' text-base text-gray-800'>
                     Contact us
                   </Link>
                   <button
@@ -417,7 +408,7 @@ export default function Navbar() {
             </li>
             <li className='flex items-center justify-between'>
               <Link
-                to='/'
+                to='/articles/featured'
                 className='text-base text-gray-800 focus:outline-none  focus:ring-2 focus:ring-gray-800 hover:underline'
               >
                 Featured
@@ -472,10 +463,7 @@ export default function Navbar() {
         <div className='w-full h-full flex items-end'>
           <ul className='bg-gray-50 dark:bg-gray-800 py-10 px-4 flex flex-col space-y-8 w-full'>
             <li>
-              <Link
-                to=''
-                className='flex items-center space-x-2 focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline'
-              >
+              <Link to='' className='flex items-center space-x-2'>
                 <div>
                   <svg
                     width={22}
@@ -513,7 +501,7 @@ export default function Navbar() {
             <li>
               <Link
                 to='/articles/saved-articles'
-                className='flex items-center space-x-2 focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline'
+                className='flex items-center space-x-2'
               >
                 <div>
                   <svg

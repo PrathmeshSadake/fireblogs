@@ -15,6 +15,8 @@ import CategoryBlogsPage from './pages/category-blogs-page';
 import UserProfilePage from './pages/user-profile-page';
 import Error404 from './pages/404-error';
 import BookmarksPage from './pages/bookmarks-page';
+import FeaturedBlogsPage from './pages/featured-blogs-page';
+import WriteBlogPage from './pages/write-blog-page';
 
 const App = () => {
   return (
@@ -27,8 +29,10 @@ const App = () => {
         <Route path='/contact-us' element={<ContactUsPage />} />
         <Route path='/articles' element={<ArticlesPage />} />
         <Route path='/articles/:slug' element={<Blogpage />} />
+        <Route path='/articles/featured' element={<FeaturedBlogsPage />} />
         <Route path='/articles/saved-articles' element={<BookmarksPage />} />
         <Route path='/account/me' element={<UserProfilePage />} />
+        <Route path='/articles/new' element={<WriteBlogPage />} />
         <Route path='*' element={<Error404 />} />
       </Routes>
       <Footer />

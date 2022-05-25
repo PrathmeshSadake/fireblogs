@@ -3,8 +3,8 @@ import React from 'react';
 const BlogPage = () => {
   return (
     <div className='2xl:mx-auto 2xl:container 2xl:px-20 xl:px-12 sm:px-6 px-4 py-16'>
-      <div class='grid grid-cols-6 gap-8 my-5'>
-        <div class='col-span-4'>
+      <div className='grid grid-cols-6 gap-8 my-5'>
+        <div className='col-span-4'>
           <h1 className='lg:text-4xl text-3xl font-semibold leading-9 text-gray-800'>
             Moving up the corporate ladder?
           </h1>
@@ -57,7 +57,7 @@ const BlogPage = () => {
             Discover more what matters to you
           </h6>
 
-          <div class='flex flex-wrap'>
+          <div className='flex flex-wrap'>
             {[
               'Technology',
               'Science',
@@ -67,14 +67,14 @@ const BlogPage = () => {
               'Travel',
               'Food',
             ].map((category) => (
-              <button class='m-1 bg-white transition duration-150 ease-in-out rounded text-gray-800 border border-gray-300 px-6 py-2 text-xs hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-offset-2  focus:ring-gray-800'>
+              <button className='m-1 bg-white transition duration-150 ease-in-out rounded text-gray-800 border border-gray-300 px-6 py-2 text-xs hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-offset-2  focus:ring-gray-800'>
                 {category}
               </button>
             ))}
           </div>
 
           {[1, 2, 3].map((e) => (
-            <div class='mt-4'>
+            <div className='mt-4'>
               <img
                 src='https://i.ibb.co/d6jQJyY/blog-2-desktop.png'
                 alt='flying letters'

@@ -46,6 +46,28 @@ export default function CategoryBlogs() {
             </div>
           </div>
           <div className='lg:ml-6 lg:mt-0 mt-7 2xl:w-3/12 lg:w-4/12 w-full flex lg:flex-col sm:flex-row flex-col items-center justify-between'>
+            <div className='mb-4'>
+              <h6 className='lg:text-2xl text-xl font-semibold text-gray-800'>
+                Discover more what matters to you
+              </h6>
+
+              <div className='flex flex-wrap'>
+                {[
+                  'Technology',
+                  'Science',
+                  'Fashion',
+                  'Personal',
+                  'Lifestyle',
+                  'Travel',
+                  'Food',
+                ].map((category) => (
+                  <button className='m-0.5 bg-white transition duration-150 ease-in-out rounded text-gray-800 border border-gray-300 px-3 py-1 text-xs hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-offset-2  focus:ring-gray-800'>
+                    {category}
+                  </button>
+                ))}
+              </div>
+            </div>
+
             <div className='lg:w-auto sm:w-1/2'>
               <img
                 src='https://i.ibb.co/d6jQJyY/blog-2-desktop.png'

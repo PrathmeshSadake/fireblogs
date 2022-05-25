@@ -7,7 +7,7 @@ const BlogArticles = () => {
         Featured articles today
       </h1>
       <p className='md:w-1/2 text-base leading-normal mt-4 sm:pr-10 text-gray-600'></p>
-      <div class='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-5 mt-5'>
+      <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-5 mt-5'>
         <div>
           <div>
             <div className='relative'>
