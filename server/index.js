@@ -1,9 +1,9 @@
 const express = require('express');
 const mongoose = require('mongoose');
 
-
 const blogRoute = require('./routes/blogRoutes');
 const userRoute = require('./routes/userRoutes');
+const authRoute = require('./routes/authRoutes');
 
 const app = express();
 app.use(express.json());
@@ -19,6 +19,7 @@ app.get('/', (req, res) => {
   res.send('Server working 🔥');
 });
 
+app.use('/api/v1/auth', authRoute);
 app.use('/api/v1/blogs', blogRoute);
 app.use('/api/v1/users', userRoute);
 
